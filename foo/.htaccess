@@ -4,4 +4,6 @@ Options +FollowSymLinks
 RewriteEngine On
 
 # Redirect to w3id.org/foo/
- RewriteRule^$https://naeima.github.io/foo_html/ [R=303,L]
+RewriteRule^$ https://naeima.github.io/foo_html/ [R=303,L]
+RewriteRule ^foo$ http://www.ontology/ns/foo# [R=302,L]
+RewriteRule ^foo_1.1$ http://www.ontology/ns/foo/1.1# [R=302,L]
