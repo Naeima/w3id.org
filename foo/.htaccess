@@ -1,0 +1,7 @@
+Options +FollowSymLinks
+
+# Rewrite engine setup
+RewriteEngine On
+
+# Redirect to w3id.org/foo/
+ RewriteRule^$https://naeima.github.io/foo_html/ [R=303,L]
